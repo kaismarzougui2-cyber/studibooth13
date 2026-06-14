@@ -178,10 +178,10 @@ h1, h2, h3 { line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; }
   margin-bottom: 26px;
 }
 .hero__title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "SP Pro", "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Manrope", sans-serif;
   font-size: clamp(2.6rem, 6vw, 4.6rem);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   margin-bottom: 24px;
 }
 .hero__highlight {
