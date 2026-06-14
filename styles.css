@@ -115,15 +115,8 @@ h1, h2, h3, h4 {
 .header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 20px; }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.03em; }
-.brand__mark {
-  width: 36px; height: 36px;
-  display: grid; place-items: center;
-  border-radius: 11px;
-  background: var(--grad-gold);
-  color: #fff;
-  font-size: 1.1rem;
-  box-shadow: var(--shadow-gold);
-}
+.brand__logo { height: 40px; width: auto; display: block; }
+.footer .brand__logo { height: 44px; }
 .brand__name { color: var(--ink); }
 .brand__name b { color: var(--gold-deep); font-weight: 800; }
 
