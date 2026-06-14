@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
 .product__photo { width: 100%; height: 210px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 22px; border: 1px solid var(--line); display: block; }
 .split__photo { width: 100%; height: 100%; min-height: 360px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
 /* Recadrage : afficher le haut de l'image (ex. photobooth vintage en portrait) */
-.product__photo.is-top, .split__photo.is-top { object-position: center 18%; }
+.product__photo.is-top, .split__photo.is-top { object-position: center 28%; }
 
 /* ===== Liste à puces dorées ===== */
 .checklist { display: grid; gap: 12px; }
