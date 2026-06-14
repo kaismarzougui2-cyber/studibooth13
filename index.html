@@ -16,7 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
 </head>
 <body>
   <!-- HEADER -->
@@ -43,6 +44,7 @@
   <!-- HERO -->
   <section class="hero hero--center">
     <div class="container hero__inner">
+      <img src="assets/logo.png" alt="StudioBooth13" class="hero__logo" />
       <p class="hero__eyebrow">📍 Marseille &amp; tout le sud de la France</p>
       <h1 class="hero__title">Photobooths et Cabine <span class="gold-text">360°</span> pour vos événements</h1>
       <p class="hero__subtitle">Location de photobooth et cabine 360° pour vos événements. Disponible pour vos événements dans le sud de la France.</p>
@@ -80,17 +82,17 @@
       </div>
       <div class="grid grid--3">
         <article class="card">
-          <div class="product__img product__img--1"><span>Photobooth Classique</span></div>
+          <img class="product__photo" src="assets/photobooth-classique.jpg" alt="Photobooth Classique StudioBooth13" loading="lazy" />
           <h3 class="card__title">Photobooth Classique</h3>
           <p class="card__text">Notre photobooth traditionnel avec impressions instantanées et personnalisations illimitées.</p>
         </article>
         <article class="card">
-          <div class="product__img product__img--2"><span>Photobooth Vintage</span></div>
+          <img class="product__photo" src="assets/photobooth-vintage.jpg" alt="Photobooth Vintage StudioBooth13" loading="lazy" />
           <h3 class="card__title">Photobooth Vintage</h3>
           <p class="card__text">Une expérience photo interactive avec des fonctionnalités avancées et un design élégant.</p>
         </article>
         <article class="card">
-          <div class="product__img product__img--3"><span>Cabine 360°</span></div>
+          <img class="product__photo" src="assets/camera-360.jpg" alt="Cabine 360° StudioBooth13" loading="lazy" />
           <h3 class="card__title">Cabine 360°</h3>
           <p class="card__text">Une expérience immersive à 360° pour capturer vos moments sous tous les angles.</p>
         </article>
@@ -98,23 +100,16 @@
     </div>
   </section>
 
-  <!-- GALERIE -->
+  <!-- REALISATIONS / INSTAGRAM -->
   <section class="section section--tint">
     <div class="container">
       <div class="section__head">
         <p class="section__eyebrow">Réalisations</p>
-        <h2 class="section__title">Découvrez des exemples de nos réalisations</h2>
-      </div>
-      <div class="gallery__grid">
-        <div class="gallery__item gallery__item--1"><span>Photobooth Vintage StudioBooth13</span></div>
-        <div class="gallery__item gallery__item--2"><span>Des vidéos spectaculaires à 360°</span></div>
-        <div class="gallery__item gallery__item--3"><span>Photobooth Classique Blanc</span></div>
-        <div class="gallery__item gallery__item--4"><span>Animation d'événement</span></div>
-        <div class="gallery__item gallery__item--5"><span>Nos photobooths animent vos événements</span></div>
-        <div class="gallery__item gallery__item--6"><span>Souvenirs personnalisés</span></div>
+        <h2 class="section__title">Découvrez comment nos photobooths animent vos événements</h2>
+        <p class="section__lead">Des vidéos spectaculaires à 360° et des souvenirs uniques pour vos invités, à retrouver sur notre Instagram.</p>
       </div>
       <div class="gallery__cta">
-        <a href="https://instagram.com/studiobooth13" target="_blank" rel="noopener" class="btn btn--ghost">Voir plus de vidéos sur notre Instagram</a>
+        <a href="https://instagram.com/studiobooth13" target="_blank" rel="noopener" class="btn btn--primary">Voir plus sur notre Instagram</a>
       </div>
     </div>
   </section>

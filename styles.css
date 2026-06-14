@@ -248,6 +248,11 @@ h1, h2, h3, h4 {
 .product__img--2 { background: linear-gradient(135deg, #d8c2a0, #8a6f4a); }
 .product__img--3 { background: linear-gradient(135deg, #f0d9a0, #b8893a); }
 
+/* Photos réelles (logo + visuels produits) */
+.hero__logo { height: 96px; width: auto; margin: 0 auto 26px; display: block; }
+.product__photo { width: 100%; height: 210px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 22px; border: 1px solid var(--line); display: block; }
+.split__photo { width: 100%; height: 100%; min-height: 360px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+
 /* ===== Liste à puces dorées ===== */
 .checklist { display: grid; gap: 12px; }
 .checklist li { position: relative; padding-left: 30px; color: var(--muted); font-size: 0.98rem; }
