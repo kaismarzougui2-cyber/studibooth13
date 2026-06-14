@@ -1,5 +1,5 @@
 /* ============================================
-   StudiBooth — Interactions
+   StudioBooth13 — Interactions partagées
    ============================================ */
 (function () {
   "use strict";
@@ -8,13 +8,13 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---- Header au scroll + CTA flottant ---- */
+  /* ---- Header au scroll + FAB "Réserver" ---- */
   var header = document.getElementById("header");
-  var floatingCta = document.querySelector(".floating-cta");
+  var fabBook = document.querySelector(".fab--reveal");
   var onScroll = function () {
     var y = window.scrollY;
     if (header) header.classList.toggle("is-scrolled", y > 20);
-    if (floatingCta) floatingCta.classList.toggle("is-visible", y > 700);
+    if (fabBook) fabBook.classList.toggle("is-visible", y > 600);
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
@@ -41,7 +41,9 @@
 
   /* ---- Reveal au scroll ---- */
   var revealTargets = document.querySelectorAll(
-    ".section__head, .card, .occasion, .gallery__item, .step, .plan, .testimonial, .zone__text, .zone__map, .faq__item, .contact__form, .contact__intro"
+    ".section__head, .card, .step, .gallery__item, .testimonial, .plan, .option," +
+    " .split__visual, .split__content, .faq__item, .contact__form, .contact__intro," +
+    " .included-banner, .price-table-wrap, .cta-band, .pricing-group__head"
   );
   revealTargets.forEach(function (el, i) {
     el.setAttribute("data-reveal", "");
@@ -57,23 +59,23 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
     revealTargets.forEach(function (el) { io.observe(el); });
   } else {
     revealTargets.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
-  /* ---- Formulaire de contact ---- */
-  var form = document.getElementById("contactForm");
+  /* ---- Formulaire de réservation ---- */
+  var form = document.getElementById("bookingForm");
   var status = document.getElementById("formStatus");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       status.className = "form__status";
 
-      var name = form.name.value.trim();
-      var email = form.email.value.trim();
+      var name = (form.name && form.name.value.trim()) || "";
+      var email = (form.email && form.email.value.trim()) || "";
       var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
       if (!name || !emailOk) {
@@ -82,29 +84,31 @@
         return;
       }
 
-      // Démo front : pas de backend. Construit un lien mailto pré-rempli.
-      var subject = encodeURIComponent("Demande de devis StudiBooth — " + name);
+      var get = function (n) { return form[n] ? (form[n].value || "-") : "-"; };
+      var subject = encodeURIComponent("Réservation StudioBooth13 — " + name);
       var bodyLines = [
-        "Nom : " + name,
+        "Nom complet : " + name,
         "Email : " + email,
-        "Téléphone : " + (form.phone.value || "-"),
-        "Occasion : " + (form.occasion.value || "-"),
-        "Prestation : " + (form.prestation.value || "-"),
-        "Date : " + (form.date.value || "-"),
-        "Ville : " + (form.city.value || "-"),
+        "Téléphone : " + get("phone"),
+        "Type d'événement : " + get("eventType"),
+        "Produit souhaité : " + get("product"),
+        "Date de l'événement : " + get("date"),
+        "Option Animateur : " + get("animator"),
         "",
         "Message :",
-        form.message.value || "-"
+        get("message")
       ];
       var body = encodeURIComponent(bodyLines.join("\n"));
 
-      status.textContent = "Merci " + name + " ! Votre messagerie va s'ouvrir pour finaliser l'envoi. Réponse sous 24h.";
+      status.textContent =
+        "Réservation envoyée — Nous vous contacterons très rapidement pour confirmer. Votre messagerie va s'ouvrir.";
       status.classList.add("is-success");
       form.reset();
 
       window.setTimeout(function () {
-        window.location.href = "mailto:contact@studibooth.fr?subject=" + subject + "&body=" + body;
-      }, 600);
+        window.location.href =
+          "mailto:studiobooth13@outlook.com?subject=" + subject + "&body=" + body;
+      }, 700);
     });
   }
 })();

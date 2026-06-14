@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StudiBooth — Location Photobooth & Caméra 360° en PACA | Mariage, Événement, Baptême</title>
-  <meta name="description" content="Location de photobooth et de caméra 360° dans la région PACA pour vos mariages, événements d'entreprise et baptêmes. Animation photo et vidéo premium, livraison et installation incluses. Devis gratuit." />
-  <meta name="keywords" content="photobooth PACA, caméra 360, location photobooth mariage, borne photo, animation événement, baptême, Marseille, Aix-en-Provence, Nice, Toulon, Cannes" />
-  <meta name="author" content="StudiBooth" />
-  <meta name="theme-color" content="#0f0c29" />
-
-  <!-- Open Graph -->
+  <title>StudioBooth13 - Location de Photobooth et Cabine 360° à Marseille</title>
+  <meta name="description" content="StudioBooth13 propose la location de photobooths et cabines 360° pour vos événements à Marseille - mariages, anniversaires, événements d'entreprise." />
+  <meta name="keywords" content="photobooth Marseille, cabine 360, location photobooth, 360 booth, borne photo, mariage, anniversaire, événement entreprise, sud de la France" />
+  <meta name="theme-color" content="#c2982f" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="StudiBooth — Photobooth & Caméra 360° en PACA" />
-  <meta property="og:description" content="Animez vos mariages, événements et baptêmes avec notre photobooth et notre caméra 360° premium. Région PACA." />
+  <meta property="og:title" content="StudioBooth13 - Photobooth & Cabine 360° à Marseille" />
+  <meta property="og:description" content="Location de photobooths et cabines 360° pour vos événements dans le sud de la France." />
+  <meta property="og:image" content="og-image.jpg" />
   <meta property="og:locale" content="fr_FR" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>" />
 </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
+  <!-- HEADER -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#accueil" class="brand" aria-label="StudiBooth accueil">
-        <span class="brand__mark">◍</span>
-        <span class="brand__name">Studi<strong>Booth</strong></span>
+      <a href="index.html" class="brand" aria-label="StudioBooth13 accueil">
+        <span class="brand__mark">◉</span>
+        <span class="brand__name">StudioBooth<b>13</b></span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#services" class="nav__link">Nos prestations</a>
-        <a href="#occasions" class="nav__link">Occasions</a>
-        <a href="#galerie" class="nav__link">Galerie</a>
-        <a href="#etapes" class="nav__link">Comment ça marche</a>
-        <a href="#tarifs" class="nav__link">Tarifs</a>
-        <a href="#contact" class="nav__cta">Devis gratuit</a>
+        <a href="index.html" class="nav__link is-active">Accueil</a>
+        <a href="photobooth.html" class="nav__link">Photobooth</a>
+        <a href="cabine-360.html" class="nav__link">360 Booth</a>
+        <a href="stand-porte-cles.html" class="nav__link">Stand Porte-clés</a>
+        <a href="tarifs.html" class="nav__link">Tarifs</a>
+        <a href="contact.html" class="nav__cta">Réserver</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -43,446 +40,198 @@
     </div>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero" id="accueil">
-    <div class="hero__glow"></div>
+  <!-- HERO -->
+  <section class="hero hero--center">
     <div class="container hero__inner">
-      <p class="hero__eyebrow">📍 Région PACA — Mariage · Événement · Baptême</p>
-      <h1 class="hero__title">
-        Des souvenirs inoubliables avec notre
-        <span class="hero__highlight">photobooth</span> &amp;
-        <span class="hero__highlight">caméra 360°</span>
-      </h1>
-      <p class="hero__subtitle">
-        StudiBooth illumine vos plus beaux moments en Provence-Alpes-Côte d'Azur.
-        Une animation photo et vidéo premium, livrée et installée pour vous, qui ravit
-        tous vos invités du premier au dernier.
-      </p>
+      <p class="hero__eyebrow">📍 Marseille &amp; tout le sud de la France</p>
+      <h1 class="hero__title">Photobooths et Cabine <span class="gold-text">360°</span> pour vos événements</h1>
+      <p class="hero__subtitle">Location de photobooth et cabine 360° pour vos événements. Disponible pour vos événements dans le sud de la France.</p>
       <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Demander un devis gratuit</a>
-        <a href="#services" class="btn btn--ghost">Découvrir nos prestations</a>
+        <a href="contact.html" class="btn btn--primary">Réserver maintenant</a>
+        <a href="tarifs.html" class="btn btn--ghost">Voir les tarifs</a>
       </div>
       <ul class="hero__stats">
-        <li><strong>+300</strong><span>événements animés</span></li>
-        <li><strong>360°</strong><span>vidéos spectaculaires</span></li>
-        <li><strong>100%</strong><span>installation incluse</span></li>
+        <li><strong>Premium</strong><span>Équipement haut de gamme</span></li>
+        <li><strong>360°</strong><span>Vidéos spectaculaires</span></li>
+        <li><strong>Marseille</strong><span>&amp; sud de la France</span></li>
       </ul>
-    </div>
-    <div class="hero__scroll" aria-hidden="true">
-      <span>Faites défiler</span>
-      <span class="hero__scroll-line"></span>
     </div>
   </section>
 
-  <!-- ===== Logos / Confiance ===== -->
+  <!-- TRUST -->
   <section class="trust">
     <div class="container trust__inner">
-      <span class="trust__item">★★★★★ Avis 5/5</span>
+      <span class="trust__item">★★★★★ Clients ravis</span>
       <span class="trust__sep"></span>
-      <span class="trust__item">Livraison &amp; installation incluses</span>
+      <span class="trust__item">Installation incluse</span>
       <span class="trust__sep"></span>
-      <span class="trust__item">Matériel professionnel</span>
+      <span class="trust__item">Technicien sur place</span>
       <span class="trust__sep"></span>
       <span class="trust__item">Partage instantané</span>
     </div>
   </section>
 
-  <!-- ===== Services ===== -->
-  <section class="section services" id="services">
+  <!-- PRODUITS -->
+  <section class="section">
     <div class="container">
       <div class="section__head">
-        <p class="section__eyebrow">Nos prestations</p>
-        <h2 class="section__title">Deux expériences, mille sourires</h2>
-        <p class="section__lead">
-          Choisissez l'animation qui vous ressemble — ou combinez les deux pour
-          une fête vraiment mémorable.
-        </p>
+        <p class="section__eyebrow">Nos équipements</p>
+        <h2 class="section__title">Des équipements haut de gamme pour rendre vos événements inoubliables</h2>
       </div>
-
-      <div class="cards">
+      <div class="grid grid--3">
         <article class="card">
-          <div class="card__icon">📸</div>
-          <h3 class="card__title">Photobooth premium</h3>
-          <p class="card__text">
-            Une borne photo élégante avec éclairage studio, fond personnalisable
-            et impressions illimitées en haute qualité. Vos invités repartent avec
-            un souvenir en main, à l'instant même.
-          </p>
-          <ul class="card__list">
-            <li>Impressions illimitées &amp; instantanées</li>
-            <li>Accessoires &amp; décors fun inclus</li>
-            <li>Personnalisation aux couleurs de votre événement</li>
-            <li>Galerie numérique partagée</li>
-          </ul>
+          <div class="product__img product__img--1"><span>Photobooth Classique</span></div>
+          <h3 class="card__title">Photobooth Classique</h3>
+          <p class="card__text">Notre photobooth traditionnel avec impressions instantanées et personnalisations illimitées.</p>
         </article>
-
-        <article class="card card--featured">
-          <span class="card__badge">Le plus populaire</span>
-          <div class="card__icon">🎥</div>
-          <h3 class="card__title">Caméra 360°</h3>
-          <p class="card__text">
-            La sensation des grandes soirées ! Montez sur la plateforme, et notre
-            bras motorisé capture une vidéo 360° spectaculaire, prête à partager sur
-            les réseaux en quelques secondes.
-          </p>
-          <ul class="card__list">
-            <li>Vidéos slow-motion ultra dynamiques</li>
-            <li>Effets, musique &amp; ralentis personnalisés</li>
-            <li>Partage instantané par QR code</li>
-            <li>Plateau lumineux jusqu'à 4 personnes</li>
-          </ul>
-        </article>
-
         <article class="card">
-          <div class="card__icon">✨</div>
-          <h3 class="card__title">Pack Duo</h3>
-          <p class="card__text">
-            Le meilleur des deux mondes. Photobooth et caméra 360° réunis pour
-            occuper et émerveiller tous vos invités, avec un animateur dédié sur
-            place du début à la fin.
-          </p>
-          <ul class="card__list">
-            <li>Photobooth + caméra 360°</li>
-            <li>Animateur professionnel dédié</li>
-            <li>Toutes les photos &amp; vidéos livrées</li>
-            <li>Tarif avantageux</li>
-          </ul>
+          <div class="product__img product__img--2"><span>Photobooth Vintage</span></div>
+          <h3 class="card__title">Photobooth Vintage</h3>
+          <p class="card__text">Une expérience photo interactive avec des fonctionnalités avancées et un design élégant.</p>
+        </article>
+        <article class="card">
+          <div class="product__img product__img--3"><span>Cabine 360°</span></div>
+          <h3 class="card__title">Cabine 360°</h3>
+          <p class="card__text">Une expérience immersive à 360° pour capturer vos moments sous tous les angles.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== Occasions ===== -->
-  <section class="section occasions" id="occasions">
+  <!-- GALERIE -->
+  <section class="section section--tint">
     <div class="container">
       <div class="section__head">
-        <p class="section__eyebrow">Pour chaque occasion</p>
-        <h2 class="section__title">Faits pour vos plus beaux jours</h2>
-      </div>
-      <div class="occasions__grid">
-        <article class="occasion">
-          <div class="occasion__img occasion__img--wedding" role="img" aria-label="Mariage"></div>
-          <div class="occasion__body">
-            <h3>💍 Mariages</h3>
-            <p>Une animation raffinée et romantique pour immortaliser le plus beau jour de votre vie et celui de vos invités.</p>
-          </div>
-        </article>
-        <article class="occasion">
-          <div class="occasion__img occasion__img--event" role="img" aria-label="Événement"></div>
-          <div class="occasion__body">
-            <h3>🎉 Événements</h3>
-            <p>Soirées d'entreprise, anniversaires, lancements de produit, galas… Marquez les esprits avec une expérience qui circule.</p>
-          </div>
-        </article>
-        <article class="occasion">
-          <div class="occasion__img occasion__img--baptism" role="img" aria-label="Baptême"></div>
-          <div class="occasion__body">
-            <h3>👶 Baptêmes</h3>
-            <p>Un moment doux et familial à célébrer. Des souvenirs tendres à offrir aux proches venus partager ce jour unique.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Galerie ===== -->
-  <section class="section gallery" id="galerie">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__eyebrow">Galerie</p>
-        <h2 class="section__title">Un aperçu de l'ambiance</h2>
-        <p class="section__lead">Des sourires, des fous rires et des souvenirs qui durent.</p>
+        <p class="section__eyebrow">Réalisations</p>
+        <h2 class="section__title">Découvrez des exemples de nos réalisations</h2>
       </div>
       <div class="gallery__grid">
-        <div class="gallery__item gallery__item--1"><span>Mariage à Aix</span></div>
-        <div class="gallery__item gallery__item--2"><span>Caméra 360°</span></div>
-        <div class="gallery__item gallery__item--3"><span>Soirée d'entreprise</span></div>
-        <div class="gallery__item gallery__item--4"><span>Baptême à Marseille</span></div>
-        <div class="gallery__item gallery__item--5"><span>Photobooth premium</span></div>
-        <div class="gallery__item gallery__item--6"><span>Anniversaire à Nice</span></div>
+        <div class="gallery__item gallery__item--1"><span>Photobooth Vintage StudioBooth13</span></div>
+        <div class="gallery__item gallery__item--2"><span>Des vidéos spectaculaires à 360°</span></div>
+        <div class="gallery__item gallery__item--3"><span>Photobooth Classique Blanc</span></div>
+        <div class="gallery__item gallery__item--4"><span>Animation d'événement</span></div>
+        <div class="gallery__item gallery__item--5"><span>Nos photobooths animent vos événements</span></div>
+        <div class="gallery__item gallery__item--6"><span>Souvenirs personnalisés</span></div>
+      </div>
+      <div class="gallery__cta">
+        <a href="https://instagram.com/studiobooth13" target="_blank" rel="noopener" class="btn btn--ghost">Voir plus de vidéos sur notre Instagram</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Étapes ===== -->
-  <section class="section steps" id="etapes">
+  <!-- POURQUOI -->
+  <section class="section">
     <div class="container">
       <div class="section__head">
-        <p class="section__eyebrow">Comment ça marche</p>
-        <h2 class="section__title">Simple comme bonjour</h2>
+        <p class="section__eyebrow">Pourquoi choisir StudioBooth13 ?</p>
+        <h2 class="section__title">Des services haut de gamme pour des souvenirs uniques</h2>
       </div>
-      <ol class="steps__list">
-        <li class="step">
-          <span class="step__num">1</span>
-          <h3>Demandez votre devis</h3>
-          <p>Dites-nous tout sur votre événement : date, lieu en PACA, nombre d'invités et prestation souhaitée.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">2</span>
-          <h3>On personnalise tout</h3>
-          <p>Décors, fonds, impressions, effets vidéo… on adapte l'expérience à votre thème et à vos couleurs.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">3</span>
-          <h3>Installation par nos soins</h3>
-          <p>Le jour J, on livre, installe et configure le matériel. Vous n'avez rien à gérer.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">4</span>
-          <h3>Place à la fête !</h3>
-          <p>Vos invités s'amusent, repartent avec leurs photos et reçoivent toutes les vidéos en ligne.</p>
-        </li>
-      </ol>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__icon">💎</div>
+          <h3 class="card__title">Équipement premium</h3>
+          <p class="card__text">Des photobooths et cabines de haute qualité pour des images parfaites.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎯</div>
+          <h3 class="card__title">Service personnalisé</h3>
+          <p class="card__text">Nous adaptons nos services aux besoins spécifiques de votre événement.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">⚡</div>
+          <h3 class="card__title">Partage instantané</h3>
+          <p class="card__text">Partagez vos photos immédiatement sur vos réseaux sociaux préférés.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🤝</div>
+          <h3 class="card__title">Assistance dédiée</h3>
+          <p class="card__text">Un technicien présent tout au long de votre événement.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ===== Tarifs ===== -->
-  <section class="section pricing" id="tarifs">
+  <!-- TEMOIGNAGES -->
+  <section class="section section--tint">
     <div class="container">
       <div class="section__head">
-        <p class="section__eyebrow">Tarifs</p>
-        <h2 class="section__title">Des formules claires &amp; tout compris</h2>
-        <p class="section__lead">Livraison, installation et accompagnement inclus partout en région PACA.</p>
+        <p class="section__eyebrow">Témoignages</p>
+        <h2 class="section__title">Découvrez les expériences de ceux qui ont fait confiance à StudioBooth13</h2>
       </div>
-      <div class="pricing__grid">
-        <article class="plan">
-          <h3 class="plan__name">Essentiel</h3>
-          <p class="plan__price"><span>à partir de</span><strong>290€</strong></p>
-          <p class="plan__desc">Photobooth seul</p>
-          <ul class="plan__features">
-            <li>3h de prestation</li>
-            <li>Impressions illimitées</li>
-            <li>Accessoires &amp; décors</li>
-            <li>Galerie numérique</li>
-            <li>Livraison &amp; installation</li>
-          </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Choisir</a>
-        </article>
-
-        <article class="plan plan--featured">
-          <span class="plan__badge">Recommandé</span>
-          <h3 class="plan__name">Signature 360°</h3>
-          <p class="plan__price"><span>à partir de</span><strong>390€</strong></p>
-          <p class="plan__desc">Caméra 360°</p>
-          <ul class="plan__features">
-            <li>3h de prestation</li>
-            <li>Vidéos 360° illimitées</li>
-            <li>Effets &amp; musique personnalisés</li>
-            <li>Partage instantané par QR code</li>
-            <li>Animateur dédié</li>
-            <li>Livraison &amp; installation</li>
-          </ul>
-          <a href="#contact" class="btn btn--primary btn--block">Choisir</a>
-        </article>
-
-        <article class="plan">
-          <h3 class="plan__name">Prestige Duo</h3>
-          <p class="plan__price"><span>à partir de</span><strong>590€</strong></p>
-          <p class="plan__desc">Photobooth + Caméra 360°</p>
-          <ul class="plan__features">
-            <li>4h de prestation</li>
-            <li>Photobooth + caméra 360°</li>
-            <li>Animateur professionnel</li>
-            <li>Toutes photos &amp; vidéos livrées</li>
-            <li>Personnalisation complète</li>
-            <li>Livraison &amp; installation</li>
-          </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Choisir</a>
-        </article>
-      </div>
-      <p class="pricing__note">💡 Tarifs indicatifs. Chaque devis est personnalisé selon votre date, votre lieu et la durée souhaitée.</p>
-    </div>
-  </section>
-
-  <!-- ===== Témoignages ===== -->
-  <section class="section testimonials">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__eyebrow">Ils nous ont fait confiance</p>
-        <h2 class="section__title">Ce que disent nos clients</h2>
-      </div>
-      <div class="testimonials__grid">
+      <div class="grid grid--3">
         <figure class="testimonial">
           <div class="testimonial__stars">★★★★★</div>
-          <blockquote>« La caméra 360° a été LA sensation de notre mariage. Tous nos invités en parlent encore ! Installation impeccable et équipe adorable. »</blockquote>
-          <figcaption>— Camille &amp; Romain, Aix-en-Provence</figcaption>
+          <blockquote>« La cabine photo a été le point fort de notre mariage ! Nos invités ont adoré et les photos sont magnifiques. L'équipe a été professionnelle du début à la fin. »</blockquote>
+          <figcaption>— Mariage à Marseille</figcaption>
         </figure>
         <figure class="testimonial">
           <div class="testimonial__stars">★★★★★</div>
-          <blockquote>« Photobooth au top pour le baptême de notre fille. Les impressions étaient magnifiques et les enfants ont adoré les accessoires. »</blockquote>
-          <figcaption>— Sophie M., Marseille</figcaption>
+          <blockquote>« Nous avons utilisé la Cabine 360° pour notre événement annuel et c'était incroyable. Les vidéos sont de très haute qualité et le partage instantané a été très apprécié. »</blockquote>
+          <figcaption>— Soirée d'entreprise</figcaption>
         </figure>
         <figure class="testimonial">
           <div class="testimonial__stars">★★★★★</div>
-          <blockquote>« Prestation pro pour notre soirée d'entreprise à Nice. Réactifs, ponctuels et un rendu vidéo bluffant. Je recommande sans hésiter. »</blockquote>
-          <figcaption>— Julien T., Nice</figcaption>
+          <blockquote>« Le photobooth a créé une ambiance festive pour mon anniversaire. Le service était impeccable et les photos personnalisées sont un souvenir précieux. »</blockquote>
+          <figcaption>— 30ème anniversaire</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- ===== Zone d'intervention ===== -->
-  <section class="section zone">
-    <div class="container zone__inner">
-      <div class="zone__text">
-        <p class="section__eyebrow">Zone d'intervention</p>
-        <h2 class="section__title">Toute la région PACA</h2>
-        <p class="section__lead">Nous nous déplaçons dans l'ensemble de la Provence-Alpes-Côte d'Azur pour animer vos événements.</p>
-        <ul class="zone__list">
-          <li>Bouches-du-Rhône (13)</li>
-          <li>Var (83)</li>
-          <li>Alpes-Maritimes (06)</li>
-          <li>Vaucluse (84)</li>
-          <li>Alpes-de-Haute-Provence (04)</li>
-          <li>Hautes-Alpes (05)</li>
-        </ul>
-        <p class="zone__cities">Marseille · Aix-en-Provence · Toulon · Nice · Cannes · Avignon · Antibes · Hyères · Fréjus · Salon-de-Provence</p>
-      </div>
-      <div class="zone__map" aria-hidden="true">
-        <div class="zone__pin zone__pin--1"><span>Marseille</span></div>
-        <div class="zone__pin zone__pin--2"><span>Nice</span></div>
-        <div class="zone__pin zone__pin--3"><span>Aix</span></div>
-        <div class="zone__pin zone__pin--4"><span>Toulon</span></div>
-        <div class="zone__map-label">PACA</div>
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Prêt à créer des souvenirs inoubliables ?</h2>
+        <p>Contactez-nous dès maintenant pour réserver votre photobooth ou cabine 360° pour votre prochain événement.</p>
+        <a href="contact.html" class="btn btn--primary">Réserver maintenant</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section class="section faq" id="faq">
-    <div class="container container--narrow">
-      <div class="section__head">
-        <p class="section__eyebrow">FAQ</p>
-        <h2 class="section__title">Vous vous demandez…</h2>
-      </div>
-      <div class="faq__list">
-        <details class="faq__item">
-          <summary>Combien de temps faut-il pour l'installation ?</summary>
-          <p>Nous arrivons en général 1h avant le début de votre événement pour tout installer et tester. Le démontage se fait à la fin, en toute discrétion.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Quel espace prévoir pour la caméra 360° ?</summary>
-          <p>Comptez environ 2 à 3 m² pour installer la plateforme et permettre au bras motorisé de tourner librement. Un point électrique à proximité suffit.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Les photos et vidéos sont-elles livrées ?</summary>
-          <p>Oui ! Vous recevez l'intégralité des photos et vidéos via une galerie en ligne privée, et vos invités peuvent les récupérer instantanément par QR code le jour J.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Vous déplacez-vous partout en PACA ?</summary>
-          <p>Absolument. Nous couvrons tous les départements de la région. Les frais de déplacement sont calculés selon la distance et précisés dans votre devis.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Comment réserver une date ?</summary>
-          <p>Remplissez le formulaire de contact ci-dessous ou appelez-nous. Nous confirmons la disponibilité, puis un acompte permet de bloquer définitivement votre date.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Contact / Devis ===== -->
-  <section class="section contact" id="contact">
-    <div class="container contact__inner">
-      <div class="contact__intro">
-        <p class="section__eyebrow">Contact</p>
-        <h2 class="section__title">Demandez votre devis gratuit</h2>
-        <p class="section__lead">Réponse sous 24h. Parlez-nous de votre projet, on s'occupe du reste.</p>
-        <ul class="contact__details">
-          <li><span>📞</span> <a href="tel:+33600000000">06 00 00 00 00</a></li>
-          <li><span>✉️</span> <a href="mailto:contact@studibooth.fr">contact@studibooth.fr</a></li>
-          <li><span>📍</span> Région PACA — Provence-Alpes-Côte d'Azur</li>
-          <li><span>📷</span> <a href="#" aria-label="Instagram">@studibooth</a></li>
-        </ul>
-      </div>
-
-      <form class="contact__form" id="contactForm" novalidate>
-        <div class="field">
-          <label for="name">Nom complet *</label>
-          <input type="text" id="name" name="name" required placeholder="Votre nom" />
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required placeholder="vous@email.com" />
-          </div>
-          <div class="field">
-            <label for="phone">Téléphone</label>
-            <input type="tel" id="phone" name="phone" placeholder="06 ..." />
-          </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="occasion">Occasion</label>
-            <select id="occasion" name="occasion">
-              <option value="">Choisir…</option>
-              <option>Mariage</option>
-              <option>Événement / Entreprise</option>
-              <option>Baptême</option>
-              <option>Anniversaire</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="prestation">Prestation</label>
-            <select id="prestation" name="prestation">
-              <option value="">Choisir…</option>
-              <option>Photobooth</option>
-              <option>Caméra 360°</option>
-              <option>Pack Duo</option>
-              <option>Je ne sais pas encore</option>
-            </select>
-          </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="date">Date de l'événement</label>
-            <input type="date" id="date" name="date" />
-          </div>
-          <div class="field">
-            <label for="city">Ville (PACA)</label>
-            <input type="text" id="city" name="city" placeholder="Marseille, Nice…" />
-          </div>
-        </div>
-        <div class="field">
-          <label for="message">Votre message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre événement…"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--block">Envoyer ma demande</button>
-        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#accueil" class="brand">
-          <span class="brand__mark">◍</span>
-          <span class="brand__name">Studi<strong>Booth</strong></span>
+        <a href="index.html" class="brand">
+          <span class="brand__mark">◉</span>
+          <span class="brand__name">StudioBooth<b>13</b></span>
         </a>
-        <p>Location de photobooth &amp; caméra 360° en région PACA. Mariages, événements et baptêmes.</p>
+        <p>Location de photobooths et cabines 360° pour vos événements à Marseille et dans tout le sud de la France.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/studiobooth13" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+          <a href="https://wa.me/33698959679" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+          <a href="mailto:studiobooth13@outlook.com" aria-label="Email">✉️</a>
+        </div>
       </div>
-      <nav class="footer__nav" aria-label="Pied de page">
-        <a href="#services">Prestations</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer__cta">
-        <a href="#contact" class="btn btn--primary">Devis gratuit</a>
+      <div class="footer__col">
+        <h4>Nos prestations</h4>
+        <a href="photobooth.html">Photobooth</a>
+        <a href="cabine-360.html">360 Booth</a>
+        <a href="stand-porte-cles.html">Stand Porte-clés</a>
+        <a href="tarifs.html">Tarifs</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+33698959679">06 98 95 96 79</a>
+        <a href="mailto:studiobooth13@outlook.com">studiobooth13@outlook.com</a>
+        <a href="https://instagram.com/studiobooth13" target="_blank" rel="noopener">@studiobooth13</a>
+        <span>Marseille &amp; sud de la France</span>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
-        <p>© <span id="year"></span> StudiBooth — Tous droits réservés · Région PACA</p>
-      </div>
+      <div class="container"><p>© <span id="year"></span> StudioBooth13 — Tous droits réservés · Marseille</p></div>
     </div>
   </footer>
 
-  <!-- Bouton flottant -->
-  <a href="#contact" class="floating-cta" aria-label="Demander un devis">📅 Devis gratuit</a>
+  <!-- BOUTONS FLOTTANTS -->
+  <div class="floating floating--bottom">
+    <a href="https://wa.me/33698959679" target="_blank" rel="noopener" class="fab fab--wa" aria-label="Nous écrire sur WhatsApp">
+      <svg class="fab__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.12.56 4.18 1.6 6L4 28l6.12-1.6a12 12 0 0 0 5.92 1.52h.01C22.68 27.92 28 22.6 28 15.96 28 9.32 22.68 4 16.04 4zm0 21.84h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.22-3.74.98 1-3.64-.24-.38a9.86 9.86 0 0 1-1.52-5.26c0-5.48 4.46-9.94 9.96-9.94a9.9 9.9 0 0 1 9.92 9.96c0 5.48-4.46 9.9-9.93 9.9zm5.46-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+      WhatsApp
+    </a>
+    <a href="contact.html" class="fab fab--book fab--reveal" aria-label="Réserver">📅 Réserver</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
