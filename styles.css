@@ -307,6 +307,7 @@ h1, h2, h3, h4 {
 .pricing-group__head { max-width: 760px; margin: 0 auto 34px; text-align: center; }
 .pricing-group__head h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 10px; }
 .pricing-group__head p { color: var(--muted); }
+.group-tag { display: inline-block; margin-bottom: 12px; background: var(--grad-gold); color: #fff; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.04em; padding: 6px 15px; border-radius: 999px; }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 36px 30px; display: flex; flex-direction: column; position: relative; box-shadow: var(--shadow-sm); transition: transform 0.35s var(--ease), box-shadow 0.35s; }
 .plan:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 .plan--featured { border-color: var(--gold-soft); box-shadow: var(--shadow-gold); }
