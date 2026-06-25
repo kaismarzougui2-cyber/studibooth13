@@ -74,8 +74,10 @@
       e.preventDefault();
       status.className = "form__status";
 
-      var name = (form.name && form.name.value.trim()) || "";
-      var email = (form.email && form.email.value.trim()) || "";
+      var nameField = form.elements["name"];
+      var emailField = form.elements["email"];
+      var name = nameField ? nameField.value.trim() : "";
+      var email = emailField ? emailField.value.trim() : "";
       var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
       if (!name || !emailOk) {
@@ -84,31 +86,41 @@
         return;
       }
 
-      var get = function (n) { return form[n] ? (form[n].value || "-") : "-"; };
-      var subject = encodeURIComponent("Réservation StudioBooth13 — " + name);
-      var bodyLines = [
-        "Nom complet : " + name,
-        "Email : " + email,
-        "Téléphone : " + get("phone"),
-        "Type d'événement : " + get("eventType"),
-        "Produit souhaité : " + get("product"),
-        "Date de l'événement : " + get("date"),
-        "Option Animateur : " + get("animator"),
-        "",
-        "Message :",
-        get("message")
-      ];
-      var body = encodeURIComponent(bodyLines.join("\n"));
+      var btn = form.querySelector('[type="submit"]');
+      var endpoint = form.getAttribute("action");
 
-      status.textContent =
-        "Réservation envoyée — Nous vous contacterons très rapidement pour confirmer. Votre messagerie va s'ouvrir.";
-      status.classList.add("is-success");
-      form.reset();
+      status.textContent = "Envoi en cours…";
+      if (btn) { btn.disabled = true; }
 
-      window.setTimeout(function () {
-        window.location.href =
-          "mailto:studiobooth13@outlook.com?subject=" + subject + "&body=" + body;
-      }, 700);
+      fetch(endpoint, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            status.textContent =
+              "Réservation envoyée — Nous vous contacterons très rapidement pour confirmer votre réservation.";
+            status.classList.add("is-success");
+            form.reset();
+          } else {
+            return response.json().then(function (data) {
+              var msg = data && data.errors
+                ? data.errors.map(function (er) { return er.message; }).join(", ")
+                : "Une erreur est survenue. Réessayez ou écrivez-nous à studiobooth13@outlook.com.";
+              status.textContent = msg;
+              status.classList.add("is-error");
+            });
+          }
+        })
+        .catch(function () {
+          status.textContent =
+            "Impossible d'envoyer le formulaire. Vérifiez votre connexion ou écrivez-nous à studiobooth13@outlook.com.";
+          status.classList.add("is-error");
+        })
+        .then(function () {
+          if (btn) { btn.disabled = false; }
+        });
     });
   }
 })();

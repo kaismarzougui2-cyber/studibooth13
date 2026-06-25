@@ -59,7 +59,9 @@
         </ul>
       </div>
 
-      <form class="contact__form" id="bookingForm" novalidate>
+      <form class="contact__form" id="bookingForm" action="https://formspree.io/f/mzdleevl" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nouvelle réservation StudioBooth13" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
         <div class="field">
           <label for="name">Nom complet *</label>
           <input type="text" id="name" name="name" required placeholder="Votre nom" />
