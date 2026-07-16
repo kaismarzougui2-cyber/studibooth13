@@ -195,6 +195,78 @@ h1, h2, h3, h4 {
 .trust__item:first-child { color: var(--gold-deep); font-weight: 600; }
 .trust__sep { width: 5px; height: 5px; border-radius: 50%; background: var(--gold-soft); }
 
+/* ===== Promo été ===== */
+.promo { padding: 40px 0 0; }
+.promo__band {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2a2620, #1c1a17);
+  border: 1px solid var(--gold-soft);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-gold);
+  padding: 44px 40px;
+  text-align: center;
+}
+.promo__band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(700px 320px at 50% -25%, rgba(217, 182, 94, 0.32), transparent 60%);
+  pointer-events: none;
+}
+.promo__band > * { position: relative; z-index: 2; }
+.promo__head { max-width: 640px; margin: 0 auto 30px; }
+.promo__badge {
+  display: inline-block;
+  background: var(--grad-gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  padding: 7px 16px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+.promo__title { color: #fff; font-size: clamp(1.9rem, 4vw, 2.7rem); margin-bottom: 12px; }
+.promo__lead { color: rgba(255, 255, 255, 0.78); font-size: 1.05rem; }
+.promo__offers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+.promo__offer {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(231, 207, 148, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 28px 24px;
+  text-align: left;
+}
+.promo__offer--featured { border-color: var(--gold-soft); background: rgba(217, 182, 94, 0.12); }
+.promo__offer-tag {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--grad-gold);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 5px 13px;
+  border-radius: 999px;
+}
+.promo__offer-name { color: #fff; font-size: 1.2rem; margin-bottom: 8px; }
+.promo__offer-desc { color: rgba(255, 255, 255, 0.68); font-size: 0.94rem; margin-bottom: 18px; }
+.promo__price { display: flex; align-items: baseline; gap: 4px; }
+.promo__price strong { font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: var(--gold-soft); line-height: 1; }
+.promo__price span { color: var(--gold-soft); font-size: 1.4rem; font-weight: 700; }
+.promo__cta { margin: 0 auto; }
+@media (max-width: 640px) {
+  .promo__offers { grid-template-columns: 1fr; }
+  .promo__band { padding: 36px 22px; }
+}
+
 /* ===== Sections ===== */
 .section { padding: 100px 0; }
 .section--tint { background: var(--bg-2); }
